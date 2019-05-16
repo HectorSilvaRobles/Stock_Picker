@@ -1,0 +1,98 @@
+[
+    {
+        "id": "1",
+        "symbol": "BA",
+        "companyName": "The Boeing Co.",
+        "open": 338.48,
+        "close": 345.64,
+        "latestTime": "May 15, 2019",
+        "realtimePrice": 345.8,
+        "previousClose": 343.04,
+        "avgTotalVolume": 6183453,
+        "marketCap": 194467433200,
+        "peRatio": 19.56,
+        "week52High": 446.01,
+        "week52Low": 292.47,
+        "url": "https://storage.googleapis.com/iex/api/logos/BA.png",
+        "cashFlow": 2788000000,
+        "grossProfit": 4271000000
+    },
+
+    {
+        "id": "2",
+        "symbol": "AAPL",
+        "companyName": "Apple, Inc.",
+        "open": 189.88,
+        "close": 190.92,
+        "latestTime": "1:24:26 PM",
+        "realtimePrice": 191.36,
+        "previousClose": 190.92,
+        "avgTotalVolume": 28912493,
+        "marketCap": 880462668800,
+        "peRatio": 15.96,
+        "week52High": 233.47,
+        "week52Low": 142,
+        "url": "https://storage.googleapis.com/iex/api/logos/AAPL.png",
+        "grossProfit": 21648000000,
+        "cashFlow": 11155000000
+    },
+    {
+        "id": "3",
+        "symbol": "IBM",
+        "companyName": "International Business Machines Corp.",
+        "open": 134.74,
+        "close": 135.88,
+        "latestTime": "May 16, 2019",
+        "realtimePrice": 135.85,
+        "previousClose": 134.4,
+        "avgTotalVolume": 3776150,
+        "marketCap": 120477050840,
+        "peRatio": 14.25,
+        "week52High": 154.36,
+        "week52Low": 105.94,
+        "url": "https://storage.googleapis.com/iex/api/logos/IBM.png",
+        "grossProfit": 7936000000,
+        "cashFlow": 4759000000
+    },
+
+    {
+        "id": "4",
+        "symbol": "MSFT",
+        "companyName": "Microsoft Corp.",
+        "open": 126.79,
+        "close": 128.93,
+        "latestPrice": 128.93,
+        "latestTime": "May 16, 2019",
+        "realtimePrice": 128.79,
+        "previousClose": 126.02,
+        "avgTotalVolume": 23402348,
+        "marketCap": 987967382600,
+        "peRatio": 28.4,
+        "week52High": 131.37,
+        "week52Low": 93.96,
+        "url": "https://storage.googleapis.com/iex/api/logos/MSFT.png",
+        "grossProfit": 20335000000,
+        "cashFlow": 13520000000
+    },
+
+    {
+        "id": "5",
+        "symbol": "KO",
+        "companyName": "The Coca-Cola Co.",
+        "open": 49.27,
+        "close": 49.58,
+        "latestTime": "May 16, 2019",
+        "realtimePrice": 49.56,
+        "previousClose": 49.18,
+        "avgTotalVolume": 11202083,
+        "marketCap": 211513733800,
+        "peRatio": 31.58,
+        "week52High": 50.84,
+        "week52Low": 41.54,
+        "url": "https://i2.wp.com/freepngimages.com/wp-content/uploads/2014/04/CocaCola_logo_2.png?fit=220%2C221",
+        "grossProfit": 5012000000,
+        "cashFlow": 699000000
+
+    }
+
+]
