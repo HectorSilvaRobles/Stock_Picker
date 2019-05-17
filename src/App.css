@@ -9,3 +9,10 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: blue;
+}

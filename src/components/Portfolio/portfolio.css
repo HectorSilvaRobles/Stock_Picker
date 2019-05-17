@@ -1,0 +1,4 @@
+.picks {
+    display: flex;
+    flex-direction: column;
+}

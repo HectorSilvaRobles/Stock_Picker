@@ -19,6 +19,7 @@ export default class Stocks extends Component{
                 latestTime={latestTime}
                 realtimePrice={realtimePrice}
                 addToPortfolioFn={addToPortfolioFn}
+                id = {id}
                  />
             </div>
         )

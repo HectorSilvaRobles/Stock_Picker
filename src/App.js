@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import axios from "axios";
 import Stocks from './components/Stocks'
+import Portfolio from "./components/Portfolio/Portfolio";
 
 class App extends Component {
   constructor(props) {
@@ -14,20 +15,17 @@ class App extends Component {
 
     this.displayStocks = this.displayStocks.bind(this);
     this.postStockToPortfolio= this.postStockToPortfolio.bind(this)
-
-    // this.getLiveDataFromExternalApi = this.getLiveDataFromExternalApi.bind(this)
   }
 
   componentDidMount() {
     this.displayStocks();
-
-    // this.getLiveDataFromExternalApi()
   }
 
   displayStocks() {
     axios
       .get("/api/stock_picker")
       .then(response => {
+          console.log(response)
         this.setState({
           displayAllStocks: response.data
         });
@@ -37,8 +35,8 @@ class App extends Component {
 
   postStockToPortfolio(stock){
       axios.post('/api/stock_picker', stock).then(response => {
-          console.log(response)
-
+         console.log(stock)
+         console.log(response.data)
           this.setState({
               portfolio: response.data
           })
@@ -49,10 +47,8 @@ class App extends Component {
     const { displayAllStocks, portfolio } = this.state;
     console.log(displayAllStocks);
     console.log(portfolio)
-    
 
-    let mappedStocksCollection = displayAllStocks.map(element => {
-        console.log(element) 
+    let mappedStocksCollection = displayAllStocks.map(element => { 
     return (
       <Stocks 
       key={element.id}
@@ -77,8 +73,13 @@ class App extends Component {
     });
 
     const mappedPortfolioCollection = portfolio.map(element => {
-        console.log()
-        return element.logo
+        return (
+            <Portfolio
+            key={element.id}
+            portSymbol={element.symbol}
+            portCompanyName = {element.companyName}
+             />
+        )
     })
 
 
@@ -86,8 +87,7 @@ class App extends Component {
     return (
         <div className='App'>
             <div className='display'>{mappedStocksCollection}</div>
-            <div>{mappedPortfolioCollection}</div>
-            {/* <div>{mappedExternalStockData}</div> */}
+            <div className='portfolio'>{mappedPortfolioCollection}</div>
         </div>
     )
   }
