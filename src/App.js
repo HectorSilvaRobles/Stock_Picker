@@ -19,6 +19,7 @@ class App extends Component {
 
   componentDidMount() {
     this.displayStocks();
+    this.postStockToPortfolio()
   }
 
   displayStocks() {

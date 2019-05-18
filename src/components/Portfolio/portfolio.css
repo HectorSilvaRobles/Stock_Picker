@@ -1,4 +1,25 @@
 .picks {
     display: flex;
-    flex-direction: column;
+    height: 0px;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.stocks {
+    display: flex;
+    height: 20px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-size: 12px;
+
+}
+
+.delete {
+    display: flex;
+    background: red;
+    height: 20px;
+    border-radius: 10px;
 }

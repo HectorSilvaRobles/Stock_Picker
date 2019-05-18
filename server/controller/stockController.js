@@ -1,6 +1,7 @@
 let stocks = require("../stockDB.json");
 let portfolio = require('../portfolioDB.json')
 
+let unique;
 module.exports = {
   getAllStocks: (req, res, next) => {
     console.log("hit");
@@ -8,21 +9,43 @@ module.exports = {
   },
   postStockToPortfolio: (req,res,next) =>{
       const {symbol, companyName, id} = req.body
-
-      const arr = []
-      const stockObject = req.body
-      arr.push(stockObject)
-
-
-      var duplicates = arr.map((value, index, arr) => {
-        const portfolioItems = []
-        portfolioItems.push(arr[index])
-        return portfolioItems
-      })
-      console.log(duplicates)
+      console.log('post hit')
       portfolio.push({symbol, companyName, id})
+    
 
-     
-      res.status(200).send(portfolio)
+    // function removeDuplicates(array){
+    
+    //   var identifier = [];
+    //   var uniqueStocks = [];
+
+    //   for(i=0; i<array.length; i++){
+    //     identifier.push(array[i].symbol)
+    //   }
+    //   console.log(uniqueStocks)
+    //   console.log(array.includes(identifier))
+    //   for(d = 0; d < identifier.length; d ++){
+    //     if(array.includes(identifier[d])){
+    //       console.log('hi')
+    //      }
+    //   }
+    //  }
+    
+    
+   function getUnique(arr, value) {
+
+    unique = arr.map(val => val[value])
+    .map((val, index, final) => final.indexOf(val) === index && index)
+    .filter(val => arr[val]).map(val => arr[val])
+
+    return unique
+   }
+   
+
+
+    getUnique(portfolio, 'symbol')
+
+          
+          res.status(200).send(unique)
+  
   },
 };
