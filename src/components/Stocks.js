@@ -8,7 +8,7 @@ export default class Stocks extends Component{
             latestTime, 
             realtimePrice, previousClose,
             avgTotalVolume, marketCap, peRatio,
-            week52High, week52Low, cashFlow, grossProfit, addToPortfolioFn
+            week52High, week52Low, cashFlow, grossProfit, addToPortfolioFn, quantity
         } = this.props
         return(
             <div>
@@ -20,6 +20,7 @@ export default class Stocks extends Component{
                 realtimePrice={realtimePrice}
                 addToPortfolioFn={addToPortfolioFn}
                 id = {id}
+                quantity = {quantity}
                  />
             </div>
         )

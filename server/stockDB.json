@@ -1,6 +1,7 @@
 [
     {
         "id": "1",
+        "quantity": 10,
         "symbol": "BA",
         "companyName": "The Boeing Co.",
         "open": 338.48,
@@ -21,6 +22,7 @@
     {
         "id": "2",
         "symbol": "AAPL",
+        "quantity": 10,
         "companyName": "Apple, Inc.",
         "open": 189.88,
         "close": 190.92,
@@ -39,6 +41,7 @@
     {
         "id": "3",
         "symbol": "IBM",
+        "quantity": 10,
         "companyName": "International Business Machines Corp.",
         "open": 134.74,
         "close": 135.88,
@@ -58,6 +61,7 @@
     {
         "id": "4",
         "symbol": "MSFT",
+        "quantity": 10,
         "companyName": "Microsoft Corp.",
         "open": 126.79,
         "close": 128.93,
@@ -78,6 +82,7 @@
     {
         "id": "5",
         "symbol": "KO",
+        "quantity": 10,
         "companyName": "The Coca-Cola Co.",
         "open": 49.27,
         "close": 49.58,
@@ -93,6 +98,145 @@
         "grossProfit": 5012000000,
         "cashFlow": 699000000
 
+    },
+
+    {
+        "id": "6",
+        "symbol": "AXP",
+        "quantity": 10,
+        "companyName": "American Express Co.",
+        "open": 118.83,
+        "close": 119.07,
+        "latestTime": "11:17:41 AM",
+        "realtimePrice": 119.645,
+        "previousClose": 119.07,
+        "avgTotalVolume": 3374413,
+        "marketCap": 99913266245,
+        "peRatio": 15.21,
+        "week52High": 120.34,
+        "week52Low": 89.05,
+        "url": "https://storage.googleapis.com/iex/api/logos/AXP.png",
+        "grossProfit": 7562000000,
+        "cashFlow": 8547000000
+
+    },
+
+    {
+        "id": "7",
+        "symbol": "FB",
+        "quantity": 10,
+        "companyName": "Facebook, Inc.",
+        "open": 181.89,
+        "close": 185.3,
+        "latestTime": "11:22:15 AM",
+        "realtimePrice": 182.99,
+        "previousClose": 185.3,
+        "avgTotalVolume": 16304869,
+        "marketCap": 522352274600,
+        "peRatio": 26.96,
+        "week52High": 218.62,
+        "week52Low": 123.02,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/600px-Facebook_logo_%28square%29.png",
+        "grossProfit": 12261000000,
+        "cashFlow": 9308000000
+
+    },
+    {
+        "id": "8",
+        "symbol": "GOOG",
+        "quantity": 10,
+        "companyName": "Alphabet, Inc.",
+        "open": 1144.5,
+        "close": 1162.3,
+        "latestTime": "11:25:14 AM",
+        "realtimePrice": 1139.66,
+        "previousClose": 1162.3,
+        "avgTotalVolume": 1534390,
+        "marketCap": 791182742820,
+        "peRatio": 28.31,
+        "week52High": 1289.27,
+        "week52Low": 970.11,
+        "url": "https://static.dezeen.com/uploads/2015/09/New-Google-logo_Dezeen_sq-300x300.jpg",
+        "grossProfit": 20190000000,
+        "cashFlow": 12000000000
+    },
+    {
+        "id": "9",
+        "symbol": "AMZN",
+        "quantity": 10,
+        "companyName": "Amazon.com, Inc.",
+        "open": 1852.69,
+        "close": 1869,
+        "latestTime": "11:28:10 AM",
+        "realtimePrice": 1856.475,
+        "previousClose": 1869,
+        "avgTotalVolume": 4347938,
+        "marketCap": 914002049700,
+        "peRatio": 75.65,
+        "week52High": 2050.5,
+        "week52Low": 1307,
+        "url": "https://seeklogo.net/wp-content/uploads/2016/10/amazon-logo-preview.png",
+        "grossProfit": 25780000000,
+        "cashFlow": 1846000000
+    },
+
+    {
+        "id": "10",
+        "symbol": "NFLX",
+        "quantity": 10,
+        "companyName": "Netflix, Inc.",
+        "open": 351.23,
+        "close": 354.45,
+        "latestTime": "11:25:49 AM",
+        "realtimePrice": 349.445,
+        "previousClose": 354.45,
+        "avgTotalVolume": 7481356,
+        "marketCap": 152784342900,
+        "peRatio": 120.5,
+        "week52High": 423.2,
+        "week52Low": 231.23,
+        "url": "https://storage.googleapis.com/iex/api/logos/NFLX.png",
+        "grossProfit": 1650378000,
+        "cashFlow": -379799000
+    },
+
+    {
+        "id": "11",
+        "symbol": "TSLA",
+        "quantity": 10,
+        "companyName": "Tesla, Inc.",
+        "open": 202.8,
+        "close": 211.03,
+        "latestTime": "11:32:59 AM",
+        "realtimePrice": 201.625,
+        "previousClose": 211.03,
+        "avgTotalVolume": 10986767,
+        "marketCap": 35208564000,
+        "peRatio": -35.72,
+        "week52High": 387.46,
+        "week52Low": 195.25,
+        "url": "https://storage.googleapis.com/webdesignledger.pub.network/WDL/12f213e1-t1.jpg",
+        "grossProfit": 565743000,
+        "cashFlow": -639606000
+    },
+    {
+        "id": "12",
+        "symbol": "MCD",
+        "quantity": 10,
+        "companyName": "McDonald's Corp.",
+        "open": 199.22,
+        "close": 198.99,
+        "latestTime": "May 20, 2019",
+        "realtimePrice": 199.05,
+        "previousClose": 199.22,
+        "avgTotalVolume": 2580360,
+        "marketCap": 151940008440,
+        "peRatio": 26.11,
+        "week52High": 200.68,
+        "week52Low": 153.13,
+        "url": "https://storage.googleapis.com/iex/api/logos/MCD.png",
+        "grossProfit": 2536300000,
+        "cashFlow": 2020600000
     }
 
 ]
